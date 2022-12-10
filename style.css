@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color : radial-gradient(circle at 33% 100%, rgb(254, 211, 115) 4%, rgb(241, 82, 69) 20%, rgb(217, 46, 127) 40%, rgb(155, 54, 183) 65%, rgb(81, 94, 207));
+}
+@font-face{
+    font-family: font;
+    src: url(./font/Pangram-FullFamily-FreeForPersonalUse/Pangram-Regular.otf) 
+}
+body {
+    display: flex;
+    justify-content: center;
+    font-family: font;
+    background-color: #f1f1f1;
+}
+input[type=button]{
+    cursor: pointer;
+}
+.container {
+    background-color: white;
+    margin-top: 10px;
+    width: 465px;
+    /* height: 655px; */
+    padding-left: 3px;
+}
+.form {
+    margin: 25px 0px 0px 10px;
+    width: 443px;
+}
+.img {
+    margin: 20px 99px 20px 99px;
+    padding: 3px;
+    border-radius: 50%;
+    background-image: var(--main-color);
+    animation: 3s linear 0s infinite alternate-reverse none running gradient;
+    background-size: 400% 400%;
+    cursor: pointer;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+
+}
+.img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+    background: white;
+    margin-bottom: -3px;
+}
+.login {
+    background-color: #04AA6D;
+    color: #FFFFFF;
+    width: 415px;
+    height: 37px;
+    border: none;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.username,.password {
+    border: 0.1px solid #D2D2D2;
+    border-radius: 5px;
+    width: 415px;
+    height: 37px;
+    padding-left: 15px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.help {
+    background: #F1F1F1;
+    padding: 22px 15px 22px 15px;
+    margin: 0px 3px 11px 0px;
+}
+.help span {
+    float: right;
+    margin-top: 5px;
+}
+.cancel {
+    width: 65px;
+    height: 30px;
+    background-color: #F44336;
+    color: white;
+    border: none;
+    font-size: 10px;
+}
+.checkbox {
+    margin: 10px 0px;
+}
+.info__form {
+    border: 3px solid #F1F1F1;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin: 25px 3px 0px 0px;
+}
+.changeSite {
+    text-decoration: none;
+    float: right;
+    margin-right: 12px;
+}
+.changeSite:hover{
+    color: rgb(241, 82, 69);
+}
+.form a {
+    color: black;
+}
+
