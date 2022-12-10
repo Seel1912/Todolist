@@ -14,6 +14,6 @@ login.addEventListener("click", (e) => {
     } else {
         localStorage.setItem(username.value, json);
         alert("Register Succes");
-        window.location.href = "login.html";
+        window.location.href = "index.html";
     }
 });
